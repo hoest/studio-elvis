@@ -1,0 +1,71 @@
+@import 'jeet'
+
+$max-width = 1024px
+
+normalize-css()
+base()
+
+.outer-wrapper
+  header
+    color #fff
+    background-color #000
+
+    a
+      color #fff
+      text-decoration none
+
+      &:hover
+        text-decoration underline
+
+    .inner-header
+      center($max-width)
+
+      .logo
+        column(1/3)
+
+      nav
+        column(2/3)
+        text-align right
+
+        ul
+          list-style none
+          margin 0
+          padding 0
+
+          li
+            display inline-block
+            margin 0 .5rem
+
+  section.payoff
+    background-color #f6a500
+    color #fff
+    text-align center
+    font-size 3rem
+
+    .inner-payoff
+      center($max-width)
+
+  section.main-content
+    background-color #fff
+
+    .inner-content
+      center($max-width)
+
+  section.recent-werk
+    background-color #f0f0f0
+
+    .inner-werk
+      center($max-width)
+
+      ul
+        list-style none
+        margin-left 0
+        margin-right 0
+        padding-left 0
+        padding-right 0
+
+        li
+          column(1/3)
+
+  footer
+    text-align center
