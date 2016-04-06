@@ -53,32 +53,15 @@ body
       height 2.5rem
       display block
 
-      &:hover:before
-        visibility hidden
-
       .inner-logo
         display none
 
     a
       color $wit
       text-decoration none
-      position relative
 
-      &:hover:before
-        visibility visible
-        transform scaleX(1)
-
-      &:before
-        content ""
-        position absolute
-        width 80%
-        height 3px
-        bottom 0
-        left 10%
-        background-color $oker
-        visibility hidden
-        transform scaleX(0)
-        transition all 0.3s ease-in-out 0s
+      &:hover
+        color $oker
 
     .inner-header
       center($max-width)
@@ -138,10 +121,17 @@ body
     background-color $wit
     padding 1rem 0
 
+    img
+      max-width 100%
+      height auto
+
     .entry-content
       cf()
 
     &.is_overview
+      .entry-title
+        column(2/3, offset=1/3)
+
       .entry-image
         column(1/3)
 
@@ -153,6 +143,11 @@ body
 
       a
         color $oker
+
+      h1, h2, h3, h4, h5, h6
+        a
+          color $grijze_tekst
+          text-decoration none
 
   section.recent-werk
     text-align center

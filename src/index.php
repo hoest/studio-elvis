@@ -7,7 +7,7 @@
     <?php if($slug == 'contact') { ?>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d611.7108365505643!2d5.28130012923917!3d52.173541598734374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c641ec9a96a5c9%3A0x22e58f93f76f4eff!2sJohannes+Poststraat+43%2C+3762+VL+Soest!5e0!3m2!1snl!2snl!4v1459448244747" width="100%" height="375" frameborder="0" style="pointer-events:none;border:0" allowfullscreen></iframe>
     <?php } else if(is_singular() && in_category('portfolio')) { ?>
-      <div class="portfolio-picture-items inner-payoff">
+      <div class="portfolio-picture-items inner-payoff" data-featherlight-gallery data-featherlight-filter="a">
         <?php echo get_portfolio_item('extra_afbeelding_1'); ?>
         <?php echo get_portfolio_item('extra_afbeelding_2'); ?>
         <?php echo get_portfolio_item('extra_afbeelding_3'); ?>
@@ -41,7 +41,10 @@
           $entry_image = get_field('uitgelicht_afbeelding', $entry_id);
           if (!is_singular() && $entry_image) { ?>
           <div class="entry-image">
+            <a title="<?php printf(esc_attr__( 'Permalink to %s', 'compass' ), the_title_attribute( 'echo=0' ) ); ?>"
+               href="<?php the_permalink(); ?>" rel="bookmark">
             <?php echo show_portfolio_thumbnail($entry_id); ?>
+            </a>
           </div>
           <?php } ?>
           <div class="entry-text">

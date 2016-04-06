@@ -48,7 +48,7 @@ function get_portfolio_item($field_name) {
   $height = $image['sizes'][ $size . '-height' ];
 
   return "<div class=\"portfolio-picture-item\">"
-    . "<a href=\"#\" data-featherlight=\"".$url."\">"
+    . "<a href=\"".$url."\">"
     . "<img src=\"".$thumb."\" alt=\"".$alt."\" width=\"".$width."\" height=\"".$height."\" />"
     . "</a></div>";
 }

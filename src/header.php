@@ -25,6 +25,7 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css"/>
 
     <link rel="stylesheet" type="text/css" href="//cdn.rawgit.com/noelboss/featherlight/1.4.0/release/featherlight.min.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.rawgit.com/noelboss/featherlight/1.4.0/release/featherlight.gallery.min.css" />
 
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
 

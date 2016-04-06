@@ -1,4 +1,9 @@
 $(function() {
+  $('.portfolio-picture-item a').featherlightGallery({
+    previousIcon: '&#9664;',
+    nextIcon: '&#9654;'
+  });
+
   // initialize slick slider
   $('.portfolio-picture-items').slick({
     infinite: true,
