@@ -8,23 +8,25 @@ $grijs = #f0f0f0
 $grijze_tekst = #8d8d8d
 $max-width = 1024px
 
-$font_family = 'Palanquin', sans-serif
+$font_family = 'aaux-next', 'Palanquin', sans-serif
 
 normalize-css()
 base()
 
 body
   font-family $font_family
-  font-weight 300
   color $grijze_tekst
 
   h1, h2, h3, h4, h5, h6
-    font-weight 100
-    margin-bottom 0
-    text-transform lowercase
+    font-weight lighter
+    margin-bottom 0.5rem
 
   p
     margin-top 0
+
+  .alignright
+    float right
+    margin-left 1rem
 
 .outer-wrapper
   &.scroll
@@ -40,14 +42,14 @@ body
     padding 2rem 0
     color $wit
     background-color $zwart
-    font-weight 700
     position fixed
     width 100%
     transition all .5s
+    font-weight bold
 
     .logo a
       background-image url('./images/logo.png')
-      background-position center center
+      background-position left center
       background-repeat no-repeat
       background-size contain
       height 2.5rem
@@ -142,7 +144,10 @@ body
       center($max-width)
 
       a
-        color $oker
+        color $grijze_tekst
+
+        &:hover
+          color $oker
 
       h1, h2, h3, h4, h5, h6
         a
