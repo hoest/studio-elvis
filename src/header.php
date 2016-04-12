@@ -33,7 +33,7 @@
     <meta name="keywords" content="Studio Elvis, Jochum de Jong, Jochum, de Jong, Grafisch, Desgign, Soest" />
 
     <meta property="og:locale" content="nl_NL" />
-    <meta property="og:image" content="<?php bloginfo('stylesheet_directory'); ?>/images/logo.png" />
+    <meta property="og:image" content="<?php bloginfo('stylesheet_directory'); ?>/images/logo-fb.png" />
     <meta property="og:url" content="<?php the_permalink(); ?>"/>
     <meta property="og:site_name" content="<?php bloginfo('name'); ?>" />
 
@@ -59,6 +59,16 @@
     <?php wp_head(); ?>
   </head>
   <body>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-76314854-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
     <div class="outer-wrapper">
       <header>
         <div class="inner-header">
