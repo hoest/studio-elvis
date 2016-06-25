@@ -39,7 +39,7 @@ body
       transition all .5s
 
   header
-    padding 2rem 0
+    padding 1rem 0
     +mobile()
       padding .5rem 0
     color $wit
@@ -50,11 +50,11 @@ body
     font-weight bold
 
     .logo a
-      background-image url('./images/logo.png')
+      background-image url('./images/logo-v2.png')
       background-position left center
       background-repeat no-repeat
       background-size contain
-      height 2.5rem
+      height 4.5rem
       display block
 
       .inner-logo
@@ -114,9 +114,11 @@ body
           margin 0 1rem
           +mobile()
             text-align center
+            line-height 1.5rem
             margin 0 .5rem
           +desktop()
             margin 0 3rem
+            line-height 4.5rem
 
         ul.social li
           display inline-block
@@ -143,12 +145,17 @@ body
         padding 1rem 0
         margin-bottom 0
 
+      .quote
+        +mobile()
+          padding 1rem
+
       .quote img
         margin 2rem 0
         max-width 100%
         span(1/3, offset=1/3)
         +mobile()
           span(1/1)
+          margin-top 4rem
 
       quote
         display none
