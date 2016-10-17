@@ -5,7 +5,7 @@
 <main class="<? echo $slug; ?>">
   <section class="payoff">
     <?php if($slug == 'contact') { ?>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d611.7108365505643!2d5.28130012923917!3d52.173541598734374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c641ec9a96a5c9%3A0x22e58f93f76f4eff!2sJohannes+Poststraat+43%2C+3762+VL+Soest!5e0!3m2!1snl!2snl!4v1459448244747" width="100%" height="375" frameborder="0" style="pointer-events:none;border:0" allowfullscreen></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2446.4538296281844!2d5.278496151341513!3d52.18062297965204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c641c1c1b8b54d%3A0x4d13c185d931b4cb!2sZwaluwenweg+16%2C+3762+VC+Soest!5e0!3m2!1snl!2snl!4v1476731805464" width="100%" height="375" frameborder="0" style="pointer-events:none;border:0" allowfullscreen></iframe>
     <?php } else if(is_singular() && in_category('portfolio')) { ?>
       <div class="portfolio-picture-items inner-payoff" data-featherlight-gallery data-featherlight-filter="a">
         <?php echo get_portfolio_item('extra_afbeelding_1'); ?>
