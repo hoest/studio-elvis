@@ -32,6 +32,12 @@ function studio_elvis_init() {
 
 add_action('widgets_init', 'studio_elvis_init');
 
+function studio_elvis_setup() {
+  add_theme_support('custom-logo', array('height' => 117, 'width' => 300));
+}
+
+add_action('after_setup_theme', 'studio_elvis_setup');
+
 function get_portfolio_item($field_name) {
   $image = get_field($field_name);
 

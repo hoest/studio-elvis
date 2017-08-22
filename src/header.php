@@ -1,3 +1,9 @@
+<?php
+
+$custom_logo_id = get_theme_mod('custom_logo');
+$image = wp_get_attachment_image_src($custom_logo_id, 'full');
+
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -18,7 +24,7 @@
       ?>
     </title>
 
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Palanquin:700,100,300" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Mukta+Vaani:700,100,300" />
     <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
 
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
@@ -73,7 +79,7 @@
       <header>
         <div class="inner-header">
           <div class="logo">
-            <a href="/">
+            <a href="/" style="<?php if(isset($image, $image[0])) { echo "background-image: url('".$image[0]."')"; }?>">
               <span class="inner-logo">
               <?php bloginfo('name'); ?>
               </span>

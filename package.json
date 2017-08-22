@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "gulp": "gulp",
     "dev": "http-server ./_public -a localhost -p 8080 --cors -o -c-1"
   },
   "author": "",
