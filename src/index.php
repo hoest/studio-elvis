@@ -15,12 +15,20 @@
         <?php echo get_portfolio_item('extra_afbeelding_5'); ?>
         <?php echo get_portfolio_item('extra_afbeelding_6'); ?>
       </div>
-    <?php } else if(is_front_page()) { ?>
+    <?php } else if(is_front_page()) {
+      $quote_image = get_field('uitgelicht_afbeelding');
+    ?>
     <div class="inner-payoff">
       <div class="quote">
-        <img src="<?php bloginfo('stylesheet_directory'); ?>/images/quote.png" />
+        <img src="<?php if(isset($quote_image, $quote_image['url'])) {
+          echo $quote_image['url'];
+        } else {
+          echo bloginfo('stylesheet_directory')."/images/quote.png";
+        } ?>" />
       </div>
-      <quote>Do something worth remembering</quote>
+      <?php if(!isset($quote_image)) { ?>
+        <quote>Do something worth remembering</quote>
+      <?php } ?>
     </div>
     <?php } ?>
   </section>
